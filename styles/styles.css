@@ -23,7 +23,16 @@ body {
   background: #f2f2f2;
 }
 
-.visually-hidden {}
+.wrapper {
+  padding: 0 40px;
+  height: auto;
+  width: 1200px;
+
+}
+
+.visually-hidden {
+  display: none;
+}
 
 .header {
   background: #fff;
@@ -62,7 +71,8 @@ body {
 
 .user-menu-link {
   text-decoration: none;
-  color: #FFF;
+  color: #000000;
+  text-align: center;
 }
 
 .user-menu-link-button {
@@ -73,6 +83,21 @@ body {
   text-transform: uppercase;
   background-color: #756157;
   padding: 8px 50px;
+  text-decoration: none;
 }
 
 .favourites-number {}
+
+.main {}
+
+.welcome {
+  background-image: url("../images/index/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  text-align: center;
+}
+
+.welcome-img {
+  text-align: center;
+  padding: 51px 371px 82px 371px;
+}
