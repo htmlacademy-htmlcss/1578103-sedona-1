@@ -57,7 +57,6 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  text-transform: capitalize;
   text-decoration: none;
 }
 
@@ -101,3 +100,38 @@ body {
   text-align: center;
   padding: 51px 371px 82px 371px;
 }
+
+.advantages {
+
+  background: #FFF;
+}
+
+.advanteges-title {
+  text-align: center;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+
+}
+
+.advanteges-text {
+  text-align: center;
+  color: #333;
+
+}
+
+.advantages-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item {}
+
+.advantages-point {}
+
+.advateges-description {}
+
+.advantages-image {}
