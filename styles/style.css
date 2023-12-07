@@ -43,7 +43,7 @@ body {
 }
 
 .header {
-  background: #fff;
+  background: #ffffff;
 }
 
 .logo-link {}
@@ -83,7 +83,7 @@ body {
 }
 
 .user-menu-link-button {
-  color: #FFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -107,13 +107,11 @@ body {
 }
 
 .welcome-img {
-  text-align: center;
-  display: block;
   margin: 0 auto;
 }
 
 .advantages {
-  background: #FFF;
+  background: #ffffff;
 }
 
 .advanteges-title {
@@ -127,7 +125,7 @@ body {
 
 .advanteges-text {
   text-align: center;
-  color: #333;
+  color: #333333;
 
 }
 
@@ -175,7 +173,7 @@ body {
 }
 
 .advantages-item-1 h3 {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .advantages-item-2 h3 {}
@@ -185,28 +183,28 @@ body {
 .advantages-item-4 h3 {}
 
 .advantages-item-5 h3 {
-  color: #FFF
+  color: #ffffff
 }
 
 .advantages-item-1 p {
-  color: #FFF;
+  color: #ffffff;
 }
 
 .advantages-item-2 p {
-  color: #333;
+  color: #333333;
 
 }
 
 .advantages-item-3 p {
-  color: #333;
+  color: #333333;
 }
 
 .advantages-item-4 p {
-  color: #333;
+  color: #333333;
 }
 
 .advantages-item-5 p {
-  color: #FFF;
+  color: #ffffff;
 }
 
 
@@ -225,7 +223,7 @@ body {
 }
 
 .infrastructure-text {
-  color: #333;
+  color: #333333;
   margin: 0;
 }
 
@@ -243,7 +241,7 @@ body {
 }
 
 .infrastructure-item-2 {
-  background-color: #83B3D3;
+
   text-align: center;
 }
 
@@ -290,7 +288,7 @@ body {
 }
 
 .hotel-serch-link {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -299,26 +297,66 @@ body {
   background-color: #756157;
 }
 
-.subscribe {}
+.subscribe {
+  background-image: url("../images/index/Subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  text-align: center;
+}
 
-.subscribe-title {}
+.subscribe-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
 
 .ubscribe-text {}
 
 .subscribe-form {}
 
-.subscribe-email {}
+.subscribe-email {
+  border-radius: 4px 0px 0px 4px;
+  background-color: #F2F2F2;
+  color: #000000;
+  border: 0;
+  padding: 0;
+}
 
-.subscribe-button {}
+.subscribe-button {
+  color: #FFFFFF;
+
+  background-color: #82B3D3;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  border-radius: 0px 4px 4px 0px;
+  border: 0;
+  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
+}
 
 .contacts {}
 
-.social {}
+.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
 .social-item {}
 
 .social-link {}
 
-.phone {}
+.phone {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+}
 
 .logo-html-link {}
