@@ -44,21 +44,38 @@ body {
 
 .header {
   background: #ffffff;
+  position: relative;
+
+
 }
 
-.logo-link {}
+.logo-link {
+  position: absolute;
+  left: 70px;
+  top: 0;
+}
 
 .logo-img {}
 
-.nav {}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 238px;
+  padding-right: 70px;
+  align-items: center;
+}
 
 .main-menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.main-menu-item {}
+.main-menu-item {
+  padding: 20px 16px;
+}
 
 .main-menu-link {
   color: #000000;
@@ -72,6 +89,8 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .user-menu-item {}
@@ -89,7 +108,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   background-color: #756157;
-  padding: 8px 50px;
+  padding: 8px 34px;
   text-decoration: none;
   display: inline-block;
   border-radius: 4px;
@@ -102,8 +121,11 @@ body {
 .welcome {
   background-image: url("../images/index/index-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   text-align: center;
+  padding-bottom: 125px;
+  /* padding-bottom установил временно для PP*/
+
 }
 
 .welcome-img {
@@ -120,12 +142,14 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
 
 }
 
 .advanteges-text {
   text-align: center;
   color: #333333;
+  margin: 0;
 
 }
 
@@ -170,6 +194,8 @@ body {
 
 .advantages-item-5 {
   background-color: #82B3D3;
+  padding-bottom: 350px;
+  /* padding установил для pp*/
 }
 
 .advantages-item-1 h3 {
@@ -225,12 +251,16 @@ body {
 .infrastructure-text {
   color: #333333;
   margin: 0;
+  padding-bottom: 182px;
+  /* padding установил для pp*/
 }
 
 .infrastructure-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 
 
 }
@@ -238,16 +268,30 @@ body {
 .infrastructure-item-1 {
   background-color: rgba(131, 179, 211, 0.12);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 238px;
+  padding: 147px 81px;
 }
 
 .infrastructure-item-2 {
-
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 238px;
+  padding: 147px 81px;
+
 }
 
 .infrastructure-item-3 {
   background-color: rgba(131, 179, 211, 0.12);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 238px;
+  padding: 147px 81px;
 }
 
 .infrastructure-list h3 {
