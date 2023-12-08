@@ -71,11 +71,10 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  width: 500px;
 }
 
-.main-menu-item {
-  padding: 20px 16px;
-}
+.main-menu-item {}
 
 .main-menu-link {
   color: #000000;
@@ -83,6 +82,8 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-decoration: none;
+  display: block;
+  padding: 20px 16px;
 }
 
 .user-menu {
@@ -119,17 +120,21 @@ body {
 .main {}
 
 .welcome {
-  background-image: url("../images/index/index-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-color: #dbe9f2;
+  background-image: url("../images/index/triangles.svg"), url("../images/index/index-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 1200px 57px, cover;
+  background-position: left bottom, center 0;
   text-align: center;
-  padding-bottom: 125px;
-  /* padding-bottom установил временно для PP*/
-
+  padding-top: 51px;
+  padding-bottom: 82px;
+  color: #FFFFFF;
+  min-height: 352px;
 }
 
 .welcome-img {
   margin: 0 auto;
+  display: block;
 
 }
 
@@ -144,104 +149,65 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0;
-  padding-bottom: 24px;
-
+  margin: 0 auto 24px;
+  width: 700px;
 }
 
 .advanteges-text {
   text-align: center;
   color: #333333;
-  margin: 0;
-  padding-bottom: 24px;
-  padding-bottom: 89px
+  margin: 0 auto 89px;
+  width: 700px;
 }
 
 .advantages-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: center;
+}
+
+
+.advantages-item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #333333;
+}
+
+.advantages-item:nth-child(2n+1) {
+  background-color: rgba(131, 179, 211, 0.20);
+  color: #333333;
+}
+
+.advantages-item:first-child {
+  background-color: #82B3D3;
+  color: #FFFFFF;
 
 }
 
-.advantages-list h3 {
+.advantages-item:last-child {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.advantages-heder {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
-  text-align: center;
 }
 
-.advantages-list p {
+
+.advantages-description {
   font-size: 18px;
   line-height: 21px;
   margin: 0;
-  text-align: center;
 }
 
-.advantages-item-1 {
-  background-color: #82B3D3;
-}
-
-.advantages-item-2 {
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-item-3 {
-  background-color: rgba(131, 179, 211, 0.20);
-}
-
-.advantages-item-4 {
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-item-5 {
-  background-color: #82B3D3;
-  padding-bottom: 350px;
-  /* padding установил для pp*/
-}
-
-.advantages-item-1 h3 {
-  color: #ffffff;
-}
-
-.advantages-item-2 h3 {}
-
-.advantages-item-3 h3 {}
-
-.advantages-item-4 h3 {}
-
-.advantages-item-5 h3 {
-  color: #ffffff
-}
-
-.advantages-item-1 p {
-  color: #ffffff;
-}
-
-.advantages-item-2 p {
-  color: #333333;
-
-}
-
-.advantages-item-3 p {
-  color: #333333;
-}
-
-.advantages-item-4 p {
-  color: #333333;
-}
-
-.advantages-item-5 p {
-  color: #ffffff;
-}
-
-
-.advantages-image {}
 
 .infrastructure {
   text-align: center;
+  padding-top: 65px
 }
 
 .infrastructure-title {
@@ -249,14 +215,15 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto 19px;
+  width: 650px;
 }
 
 .infrastructure-text {
   color: #333333;
-  margin: 0;
-  padding-bottom: 182px;
-  /* padding установил для pp*/
+  margin: 0 auto 63px;
+  width: 650px;
+
 }
 
 .infrastructure-list {
@@ -266,60 +233,38 @@ body {
   display: flex;
   flex-wrap: wrap;
 
-
 }
 
-.infrastructure-item-1 {
+.infrastructure-item {
+  box-sizing: border-box;
+  padding: 185px 86px 81px;
+  width: 400px;
+}
+
+.infrastructure-item:nth-child(2n+1) {
   background-color: rgba(131, 179, 211, 0.12);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 238px;
-  padding: 147px 81px;
 }
 
-.infrastructure-item-2 {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  max-width: 238px;
-  padding: 147px 81px;
 
-}
-
-.infrastructure-item-3 {
-  background-color: rgba(131, 179, 211, 0.12);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 238px;
-  padding: 147px 81px;
-}
-
-.infrastructure-list h3 {
+.infrastructure-heder {
   margin: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
-
+  margin-bottom: 29px;
 }
 
-.infrastructure-list p {
-  margin: 0;
+.infrastructure-description {
+  margin: 0 auto;
   font-size: 18px;
   line-height: 21px;
 }
 
-
-.rastructure-point {}
-
-.infrastructure-description {}
-
 .hotel-search {
   text-align: center;
+  padding-top: 97px;
+  padding-bottom: 96px;
 }
 
 .hotel-search-title {
@@ -327,15 +272,18 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto 20px;
+  width: 700px;
 }
 
 .hotel-serch-text {
   color: #333333;
-  margin: 0;
+  margin: 0 auto 53px;
+  width: 700px;
 }
 
 .hotel-serch-link {
+  display: inline-block;
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
@@ -343,6 +291,8 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   background-color: #756157;
+  border-radius: 4px;
+  padding: 7px 51px 8px 50px;
 }
 
 .subscribe {
@@ -352,6 +302,8 @@ body {
   background-color: #82B3D3;
   color: #FFFFFF;
   text-align: center;
+  padding-top: 97px;
+  padding-bottom: 150px;
 }
 
 .subscribe-title {
@@ -359,18 +311,33 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0 auto 21px;
+  width: 700px;
 }
 
-.ubscribe-text {}
+.subscribe-text {
+  margin: 0 auto 53px;
+  width: 545px;
+}
 
-.subscribe-form {}
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 0px 258px;
+
+}
 
 .subscribe-email {
+  font-size: 18px;
+  line-height: 24px;
   border-radius: 4px 0px 0px 4px;
   background-color: #F2F2F2;
   color: #000000;
   border: 0;
-  padding: 0;
+  padding: 0 0 37px 290px;
+
 }
 
 .subscribe-button {
