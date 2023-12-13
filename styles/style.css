@@ -48,8 +48,7 @@ body {
 .header {
   background: #ffffff;
   position: relative;
-
-
+  `
 }
 
 .logo-link {
@@ -542,7 +541,7 @@ body {
   background-color: #E6E6E6;
 }
 
-.subscribe-email:focus {
+.subscribe-email:focus-visible {
   outline: none;
   border: 3px solid #83B3D3;
   background-color: #E6E6E6;
@@ -677,4 +676,221 @@ body {
 .logo-html-link:active {
   color: #756157;
   opacity: 0.3;
+}
+
+.search-form {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  background-image: url("../images/catalog/catalog/form-beck.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 35px 70px 70px 70px;
+}
+
+.hotels-search {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.infrastructure-search {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 220px;
+}
+
+.form-title {
+  padding: 0 0 31px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.infrastructure-search-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.infrastructure-search-item {
+  margin: 0 0 13px;
+}
+
+.infrastructure-checkbox {}
+
+.checkbox-label {
+  font-size: 18px;
+  line-height: 23px;
+  position: relative;
+  display: inline-block;
+  padding-left: 36px;
+}
+
+.checkbox-label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.checkbox-label::after {
+  content: "";
+  width: 10px;
+  height: 4px;
+  border-left: 2px solid #3F5E72;
+  border-bottom: 2px solid #3F5E72;
+  background-color: #FFFFFF;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 5px;
+  top: 6px;
+  display: none;
+}
+
+.infrastructure-checkbox:checked+.checkbox-label::after {
+  display: block;
+}
+
+.checkbox-label:hover {
+  opacity: 0.6;
+}
+
+.infrastructure-checkbox:focus+.checkbox-label::before {
+  outline: 3px solid #e10404;
+}
+
+.infrastructure-checkbox:focus:not(:focus-visible)+.checkbox-label::before {
+  outline: none;
+}
+
+.infrastructure-checkbox:focus-visible+.checkbox-label::before {
+  outline: 3px solid #e10404;
+}
+
+.checkbox-label:active {
+  opacity: 0.3;
+}
+
+.house-type {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 291px;
+}
+
+.house-type-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.house-type-item {
+  margin-bottom: 13px;
+}
+
+.house-type-radio {}
+
+.radio-label {
+  font-size: 18px;
+  line-height: 23px;
+  display: inline-block;
+  position: relative;
+  padding-left: 36px;
+}
+
+.radio-label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.radio-label::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #3F5E72;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  display: none;
+}
+
+.house-type-radio:checked+.radio-label::after {
+  display: block;
+}
+
+.radio-label:hover {
+  opacity: 0.6;
+}
+
+.house-type-radio:focus+.radio-label::before {
+  outline: 3px solid #e10404;
+}
+
+.house-type-radio:focus:not(:focus-visible)+.radio-label::before {
+  outline: none;
+}
+
+.house-type-radio:focus-visible+.radio-label::before {
+  outline: 3px solid #e10404;
+}
+
+
+.radio-label:active {
+  opacity: 0.3;
+}
+
+.prices {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.prices-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prices-item {
+  display: inline-block;
+  position: relative;
+}
+
+.prices-range {
+  color: #000000;
+  background-color: #F2F2F2;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 4px 0 0 4px;
+  width: 143px;
+  padding: 10px 0;
+  border: none;
+  display: inline-block;
+
+}
+
+.prices-label {
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  opacity: 0.3;
+  position: relative;
+  right: 0;
+  top: 0;
 }
