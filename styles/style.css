@@ -27,8 +27,11 @@ body {
 .wrapper {
   margin: 0 auto;
   width: 1200px;
+  min-height: 100vh;
   background-color: #ffffff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
+  display: flex;
+  flex-direction: column;
 }
 
 .visually-hidden {
@@ -70,7 +73,7 @@ body {
   justify-content: space-between;
   padding-left: 238px;
   padding-right: 70px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .main-menu {
@@ -97,7 +100,7 @@ body {
 
 
 .main-menu-link-active::after {
-  content: " ";
+  content: "";
   width: 68px;
   height: 1px;
   border-bottom: 2px solid #756257;
@@ -108,23 +111,18 @@ body {
 }
 
 .main-menu-link:hover {
-  background-color: #68A2CA;
-  color: #FFFFFF;
+  color: #82B3D3;
   border-radius: 5px;
 }
 
 .main-menu-link:focus {
   outline: none;
-  background-color: #68A2CA;
-  color: #FFFFFF;
+  color: #82B3D3;
   border-radius: 5px;
 }
 
 .main-menu-link:active {
-  outline: none;
-  background-color: #68A2CA;
-  color: #FFFFFF;
-  border-radius: 5px;
+  color: #82B3D3;
   opacity: 40%;
 }
 
@@ -132,8 +130,10 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 350px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -166,56 +166,58 @@ body {
 }
 
 .user-menu-link:active {
-  background-color: #82B3D3;
-  color: rgba(255, 255, 255, 0.30);
-  opacity: 70%;
-  border-radius: 5px;
+  color: #82B3D3;
+  opacity: 40%;
 }
 
 .favourites-number {
+  color: #FFFFFF;
   font-size: 10px;
   line-height: 10px;
   background-color: #7DB54F;
   position: absolute;
   right: 4px;
-  bottom: 51%;
-  width: 20px;
+  bottom: 50%;
+  min-width: 20px;
   height: 20px;
   border-radius: 10px;
   box-sizing: border-box;
-  padding-top: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4px;
 }
 
-.favourites-number:hover {
+.user-menu-link:hover .favourites-number {
   background-color: #6C9E42;
-  color: #FFFFFF;
+
 }
 
-.favourites-number:focus {
+.user-menu-link:focus .favourites-number {
   outline: none;
   background-color: #6C9E42;
-  color: #FFFFFF;
 }
 
-.favourites-number:active {
+.user-menu-link:active .favourites-number {
   background-color: #7DB54F;
-  color: rgba(255, 255, 255, 0.30);
+
 }
 
 .user-menu-link-button {
-  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   background-color: #756157;
-  width: 160px;
-  box-sizing: border-box;
-  padding: 8px 34px;
+  color: #ffffff;
   text-decoration: none;
-  display: inline-block;
+  padding: 9px 35px 6px;
   border-radius: 4px;
+  display: block;
+
 }
+
+
 
 .user-menu-link-button:hover {
   background-color: #615048;
@@ -231,7 +233,9 @@ body {
   color: rgba(255, 255, 255, 0.30);
 }
 
-.main {}
+.main {
+  flex-grow: 1;
+}
 
 .welcome {
   background-color: #dbe9f2;
@@ -254,7 +258,7 @@ body {
 
 .advantages {
   background: #ffffff;
-  padding-top: 69px;
+  padding-top: 70px;
 }
 
 .advanteges-title {
@@ -270,7 +274,7 @@ body {
 .advanteges-text {
   text-align: center;
   color: #333333;
-  margin: 0 auto 89px;
+  margin: 0 auto 88px;
   width: 700px;
 }
 
