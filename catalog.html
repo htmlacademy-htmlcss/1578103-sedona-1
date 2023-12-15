@@ -118,14 +118,12 @@
               </li>
             </ul>
             <div class="range-slider">
-              <div class="range-slider-wrap prices-min">
-                <button type="button" class="range-slider-button">
-                  <span class="visually-hidden">Задать минимальную цену</span>
-                </button>
-                <button type="button" class="range-slider-button prices-max">
-                  <span class="visually-hidden">Задать минимальную цену</span>
-                </button>
-              </div>
+              <button type="button" class="range-slider-button prices-min">
+                <span class="visually-hidden">Задать минимальную цену</span>
+              </button>
+              <button type="button" class="range-slider-button prices-max">
+                <span class="visually-hidden">Задать минимальную цену</span>
+              </button>
             </div>
           </fieldset>
           <ul class="search-button-list">
@@ -136,6 +134,39 @@
           </ul>
 
         </form>
+      </section>
+      <section class="hotel-catalog">
+        <h2 class="visually-hidden">Каталог подобранных гостиниц</h2>
+        <div class="sorting">
+          <p class="hotels-found">Найдено гостиниц: 38</p>
+          <div class="wrap-select-sort">
+            <select name="sorting-catalog" class="select-sort">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала с высоки рейтингом</option>
+              <option value="unpopular">Cначала с низким рейтингом</option>
+            </select>
+          </div>
+          <ul class="view-list">
+            <li class="view-item">
+              <span class="visually-hidden">Показать результат таблицой</span>
+              <button class="view-button button-grid button-activ"></button>
+            </li>
+            <li class="view-item">
+              <span class="visually-hidden">Показать результат одной колонкой</span>
+              <button class="view-button button-column"></button>
+            </li>
+            <li class="view-item">
+              <span class="visually-hidden">Показать результат списком</span>
+              <button class="view-button button-list"></button>
+            </li>
+          </ul>
+        </div>
+        <div class="wrap-catalo">
+          <ul class="hotel-card-lisy">
+            <li class="hotel-card-item"></li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer>
