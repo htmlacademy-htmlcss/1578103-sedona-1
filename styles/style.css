@@ -167,7 +167,7 @@ body {
 }
 
 .favourites-number {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 10px;
   line-height: 10px;
   background-color: #7DB54F;
@@ -676,7 +676,7 @@ body {
 .search-form {
   color: #FFFFFF;
   background-color: #82B3D3;
-  background-image: url("../images/catalog/catalog/form-beck.jpg");
+  background-image: url("../images/catalog/form-beck.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1022,7 +1022,7 @@ body {
   content: "";
   width: 75%;
   height: 4px;
-  border-bottom: 4px solid #FFFFFF;
+  border-bottom: 4px solid #ffffff;
   position: absolute;
   left: 0;
   top: 4px;
@@ -1030,7 +1030,7 @@ body {
 
 .range-slider-button {
   border: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 20px;
   height: 20px;
   border-radius: 5px;
@@ -1151,6 +1151,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 15px 20px;
+  padding-bottom: 37px;
 
 }
 
@@ -1239,3 +1240,86 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
 }
+
+.hotel-card-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hotel-card {
+  width: 340px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #E6E6E6;
+}
+
+.hotel-card-image-link {}
+
+.hotel-card-image {}
+
+.hotel-card-title-link {
+  text-decoration: none;
+}
+
+.hotel-card-title {
+  margin: 0;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.wrap-hotel-card {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
+}
+
+.hotel-card-type {
+  color: #333333;
+  font-size: 18px;
+  line-height: 21px
+}
+
+.hotel-card-price {
+  color: #333333;
+  font-size: 18px;
+  line-height: 21px
+}
+
+.hotel-card-details {
+  background-color: #756157;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.hotel-card-favourites {
+  border: none;
+  border-radius: 4px;
+  background-color: #82B3D3;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.hotel-card-stars {
+  background-image: url("../images/icons/star.svg");
+  background-position: 0 0;
+  background-repeat: space no-repeat;
+  background-size: auto;
+  width: 89px;
+  height: 37px;
+}
+
+.hotel-card-rate {}
