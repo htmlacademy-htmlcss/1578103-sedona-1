@@ -173,9 +173,10 @@
       </section>
     </footer>
   </div>
-  <div class="modal">
+  <div class="modal modal-close">
     <div class="modal-window">
       <button type="button" class="modal-close-button">
+        <span class="close-button-cross"></span>
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -202,7 +203,7 @@
                   </svg>
                 </button>
               </div>
-              <span class="field-message massage-alarm">Мы не можем отправить вас в прошлое.</span>
+              <p class="field-message massage-alarm">Мы не можем отправить вас в прошлое.</p>
             </div>
           </div>
           <div class="form-group">
@@ -226,34 +227,43 @@
                   </svg>
                 </button>
               </div>
-              <span class="field-message">На эти даты есть свободные номера. Пока есть.</span>
+              <p class="field-message">На эти даты есть свободные номера. Пока есть.</p>
             </div>
           </div>
           <div class="form-group-guest">
             <div class="guest-group">
               <label for="adults" class="group-title">Взрослые:</label>
               <div class="number-guest">
-                <button type="button" class="delete-guests button-form">
+                <button type="button" class="delete-guests quantity-button button-form">
+                  <span class="button-minus"></span>
                   <span class="visually-hidden">Уменьшить количество взрослых</span>
                 </button>
                 <input type="number" class="field field-guests" name="adults" id="adults" placeholder="2">
-                <button type="button" class="add-guest button-form">
+                <button type="button" class="add-guest quantity-button button-form">
+                  <span class="button-plus"></span>
                   <span class="visually-hidden">Увеличить количество взрослых</span>
                 </button>
               </div>
             </div>
             <div class="guest-group">
               <label for="children" class="group-title group-title-children">Дети:</label>
-              <div class="number-guest">
-                <button type="button" class="tooltip button-form" aria-labelledby="tooltip-label">
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label"></span></button>
+              <div class="tooltip">
+                <button type="button" class="tooltip-button button-form" aria-labelledby="tooltip-label">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="2" height="12" viewBox="0 0 2 12" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="currentColor" />
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </div>
+
               <div class="number-guest">
-                <button type="button" class="delete-guests button-form">
+                <button type="button" class="delete-guests quantity-button button-form">
+                  <span class="button-minus"></span>
                   <span class="visually-hidden">Уменьшить количество детей</span>
                 </button>
                 <input type="number" class="field field-guests" name="children" id="children" placeholder="2">
-                <button type="button" class="add-guest button-form">
+                <button type="button" class="add-guest quantity-button button-form">
+                  <span class="button-plus"></span>
                   <span class="visually-hidden">Уменьшить количество детей</span>
                 </button>
               </div>
@@ -265,6 +275,7 @@
       </section>
     </div>
   </div>
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>
