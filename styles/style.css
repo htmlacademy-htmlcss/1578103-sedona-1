@@ -1782,15 +1782,15 @@ body {
 }
 
 .field::placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .field::-webkit-input-placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .field::-moz-placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .field-date {
@@ -1799,8 +1799,6 @@ body {
   padding: 0 0 0 21px;
   border-radius: 4px;
 }
-
-
 
 .field-guests {
   padding: 0 5px;
@@ -1814,13 +1812,10 @@ body {
   position: relative;
 }
 
-
-
 .field-guests::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 
 .button-form {
   border: none;
@@ -1909,7 +1904,6 @@ body {
   position: relative;
 }
 
-
 .delete-guests {
   border-radius: 4px 0 0 4px;
 }
@@ -1997,7 +1991,6 @@ body {
     opacity: 1;
   }
 }
-
 
 .quantity-button:focus-visible .button-plus::before,
 .quantity-button:focus-visible .button-plus::after,
@@ -2118,33 +2111,32 @@ body {
   }
 }
 
-
 .button-search-hotel {
-  color: #FFFFFF;
+  color: #ffffff;
   width: 577px;
   font-family: inherit;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   border-radius: 10px;
   padding: 18px 20px;
 }
 
 .button-search-hotel:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-search-hotel:focus-visible {
   outline: none;
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 @supports not selector(:focus-visible) {
   .button-search-hotel:focus {
     outline: none;
-    background-color: #68A2CA;
+    background-color: #68a2ca;
   }
 }
 

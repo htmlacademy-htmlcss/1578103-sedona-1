@@ -129,7 +129,7 @@
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post" class="subscribe-form">
-          <input type="text" name="user-email" class="subscribe-email" placeholder="Ваш e-mail">
+          <input type="text" name="user-email" class="subscribe-email" placeholder="Ваш e-mail" required>
           <button type="submit" class="subscribe-button">Подписаться</button>
         </form>
       </section>
@@ -186,7 +186,7 @@
             <label for="check-in" class="group-title">Дата заезда:</label>
             <div class="wrap-fied">
               <div class="wrap-button-calendar">
-                <input type="text" class="field field-date" name="check-in" id="check-in" placeholder="27 апреля 2020">
+                <input type="text" class="field field-date" name="check-in" id="check-in" placeholder="Укажите дату" value="27 апреля 2020" required>
                 <button type="button" class="button-calendar button-form">
                   <svg role="img" aria-label="Открыть календарь" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z" fill="currentColor" />
@@ -210,7 +210,7 @@
             <label for="departure" class="group-title ">Дата выезда:</label>
             <div class="wrap-fied">
               <div class="wrap-button-calendar">
-                <input type="text" class="field field-date" id="departure" name="departure" placeholder="1 сентября 2023">
+                <input type="text" class="field field-date" id="departure" name="departure" placeholder="Укажите дату" value="1 сентября 2023" required>
                 <button type="button" class="button-calendar button-form">
                   <svg role="img" aria-label="Открыть календарь" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z" fill="currentColor" />
@@ -238,7 +238,7 @@
                   <span class="button-minus"></span>
                   <span class="visually-hidden">Уменьшить количество взрослых</span>
                 </button>
-                <input type="number" class="field field-guests" name="adults" id="adults" placeholder="2">
+                <input type="number" class="field field-guests" name="adults" id="adults" value="2" required>
                 <button type="button" class="add-guest quantity-button button-form">
                   <span class="button-plus"></span>
                   <span class="visually-hidden">Увеличить количество взрослых</span>
@@ -261,7 +261,7 @@
                   <span class="button-minus"></span>
                   <span class="visually-hidden">Уменьшить количество детей</span>
                 </button>
-                <input type="number" class="field field-guests" name="children" id="children" placeholder="2">
+                <input type="number" class="field field-guests" name="children" id="children" value="2" required>
                 <button type="button" class="add-guest quantity-button button-form">
                   <span class="button-plus"></span>
                   <span class="visually-hidden">Уменьшить количество детей</span>

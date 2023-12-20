@@ -109,11 +109,11 @@
             <legend class="form-title form-title-prices">Стоимость, ₽:</legend>
             <ul class="prices-list">
               <li class="prices-item">
-                <input type="number" class="prices-range prices-range-min" id="min-price" name="min-price" max="9000" min="0" value="0">
+                <input type="number" class="prices-range prices-range-min" id="min-price" name="min-price" max="9000" min="0" value="0" required>
                 <label for="min-price" class="prices-label">от</label>
               </li>
               <li class="prices-item">
-                <input type="number" class="prices-range prices-range-max" id="max-price" name="max-price" max="9000" min="0" value="9000">
+                <input type="number" class="prices-range prices-range-max" id="max-price" name="max-price" max="9000" min="0" value="9000" required>
                 <label for="max-price" class="prices-label">до</label>
               </li>
             </ul>
@@ -269,7 +269,7 @@
         <h2 class="subscribe-title subscribe-title-catalog">Подпишитесь на рассылку</h2>
         <p class="subscribe-text subscribe-text-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post" class="subscribe-form">
-          <input type="text" name="user-email" class="subscribe-email" placeholder="Ваш e-mail">
+          <input type="text" name="user-email" class="subscribe-email" placeholder="Ваш e-mail" required>
           <button type="submit" class="subscribe-button">Подписаться</button>
         </form>
       </section>
