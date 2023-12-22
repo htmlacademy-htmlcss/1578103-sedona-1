@@ -442,6 +442,7 @@ body {
 }
 
 .infrastructure-description {
+  color: #333333;
   margin: 0 auto;
   font-size: 18px;
   line-height: 21px;
@@ -875,6 +876,15 @@ body {
   opacity: 0.3;
 }
 
+.infrastructure-checkbox:disabled+.checkbox-label {
+  opacity: 0.2;
+}
+
+.infrastructure-checkbox:disabled+.checkbox-label::after {
+  display: none;
+}
+
+
 .house-type {
   margin: 0 60px 0 0;
   padding: 0;
@@ -949,6 +959,14 @@ body {
   opacity: 0.3;
 }
 
+.house-type-radio:disabled+.radio-label {
+  opacity: 0.2;
+}
+
+.house-type-radio:disabled+.radio-label::after {
+  display: none;
+}
+
 .prices {
   margin: 0 70px 0 0;
   padding: 0;
@@ -974,6 +992,7 @@ body {
 .prices-range {
   color: #000000;
   background-color: #F2F2F2;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1187,7 +1206,7 @@ body {
 }
 
 .hotel-catalog {
-  padding: 50px 70px 0;
+  padding: 49px 70px 0;
 
 }
 
@@ -1223,13 +1242,13 @@ body {
   appearance: none;
   width: 292px;
   padding: 14px 10px 10px 19px;
-  padding-left: 19px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   cursor: pointer;
+  background-color: inherit;
 }
 
 .wrap-select-sort::before {
@@ -1355,7 +1374,7 @@ body {
 
 .hotel-card {
   width: 340px;
-  padding: 21px 19px 16px;
+  padding: 21px 19px 19px;
   box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
@@ -1580,11 +1599,11 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 .pagination {
-  margin: 0 0 20px;
+  margin: 0 0 17px;
   padding: 40px 0;
   list-style-type: none;
   display: flex;
@@ -1913,9 +1932,9 @@ body {
   height: 20px;
   position: absolute;
   top: 50%;
-  margin-top: -10px;
+  margin-top: -12px;
   left: 50%;
-  margin-left: -10px;
+  margin-left: -13px;
   border: 3px solid transparent;
   border-radius: 4px;
 }
@@ -1941,9 +1960,9 @@ body {
   height: 20px;
   position: absolute;
   top: 50%;
-  margin-top: -10px;
+  margin-top: -12px;
   left: 50%;
-  margin-left: -10px;
+  margin-left: -13px;
   border: 3px solid transparent;
   border-radius: 4px;
 }
@@ -2075,11 +2094,11 @@ body {
   line-height: 20px;
   border-radius: 10px;
   box-sizing: border-box;
-  padding: 21px 22px;
+  padding: 21px 17px 23px 22px;
   position: absolute;
   left: 50%;
   margin-left: -128px;
-  top: 50px;
+  top: 52px;
   display: none;
 }
 
